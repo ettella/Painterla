@@ -1,0 +1,46 @@
+
+nav {
+    position: relative;
+    top:0;
+    left:0;
+    width: 100vw;
+}
+
+
+.bg-pblue {
+    background-color: powderblue;
+}
+
+.bg-pdblue {
+    background-color: rgb(78, 146, 155);
+}
+
+.branding {
+    border: 2px solid rgb(80, 61, 202);
+     border-radius: 8px;
+     font-family: Courgette;
+     background-color: rgb(202, 238, 243);
+}
+
+
+.navbar-toggler{
+    border: 1px solid rgb(80, 61, 202);
+    color:  rgb(80, 61, 202);
+}
+
+.small {
+    width: 28px;
+    padding: 3px
+}
+
+.small:hover {
+    background-color:rgb(78, 146, 155) ;
+    border-radius: 12px;
+}
+
+
+.login:hover {
+    background-color: white;
+    border-radius: 5px; 
+}
+

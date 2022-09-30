@@ -1,0 +1,93 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-pblue">
+  <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand branding p-2" routerLink="/">Painterla</a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburger-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse ms-lg-5" id="hamburger-menu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3 mt-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link m-1"
+                     routerLinkActive="aktiv-funkcio"
+                     [routerLink]="['paintings']">Paintings
+              </a>
+              </li>
+              <li class="nav-item m-1">
+                  <a class="nav-link"
+                     [routerLink]="['inspirations']" >Inspirations
+                  </a>
+              </li>  
+              <li class="nav-item m-1 m-1">
+              <a class="nav-link"
+                [routerLink]="['favourites']"> &#x2764; </a>   
+                 
+              </li>    
+              <li class="nav-item m-1 m-1">
+                <a class="nav-link login"
+                  [routerLink]="['auth']"
+                  (click)="onLogout()"
+                  > Log out </a>   
+                  <!-- *ngIf="isUserLogin" -->
+                   
+                </li>    
+              
+          </ul>
+
+          <div class="small col-lg-2 ">
+            <a [routerLink]="['shopping-basket']">
+              <img src="assets/images/shoppingbag.svg" alt="shoppingbag" class="img-fluid small">
+            </a>
+          </div>
+          
+          <ul class="navbar-nav my-2 my-lg-0 me-lg-10 mx-1" >
+            
+          <li class="nav-item dropdown">
+            <!-- <mat-icon>shopping_cart</mat-icon> -->
+            <!-- <mdb-icon fas icon="shopping-basket"></mdb-icon> -->
+           
+           
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="aktiv-funkcio">
+              Shopping
+            </a>
+           
+            <ul class="dropdown-menu opacity-75" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" style="cursor:pointer" [routerLink]="['how-to-shop']">How to Shop</a></li>
+              <li><a class="dropdown-item" style="cursor:pointer" [routerLink]="['q-a']">Q&A</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" style="cursor:pointer" [routerLink]="['terms-conditions']">Terms and Conditions</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 mx-2" type="search" placeholder="Search" aria-label="Search" 
+          >
+          <!-- [(ngModel)]="filtering" -->
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          <!-- keresési eredmény itt lesz majd látható: 
+
+          <ul class="list-group">
+              <a href=""> <li class="list-group-item"
+                  *ngFor="let f of festmenyek | searchfilter:szures:'cim' ">
+                  <span> 
+                    <b> {{festmeny.cim | uppercase  }} </b> - 
+                  </span>
+              </a>
+            </li>
+          </ul>
+        
+        
+        -->
+        </form>
+
+
+      </div>
+
+  </div>
+</nav>
+
+
