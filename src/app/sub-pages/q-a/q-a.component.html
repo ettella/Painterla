@@ -1,0 +1,17 @@
+
+  
+  <div class="row m-3 background">
+    <h1 class="my-3 mb-4">Questions and Answers</h1>
+      <div class="col-xs-12">
+        <ul class="list-group">
+          <li
+            class="list-group-item list-group-item-info trans"
+            *ngFor="let q of questions; let i = index"
+            >
+            <div (click)="onCollapseAccordion(accordionOpened)" style="cursor: pointer">{{ q.question }}</div>
+            <div #accordionOpened class="list-group-item-info inner-accordion">{{ q.answer }}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+

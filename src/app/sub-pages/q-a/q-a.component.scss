@@ -1,0 +1,25 @@
+.trans {
+    transition: 0.7s;
+}
+
+li:hover {
+    background-color:rgb(255, 94, 0);
+    color: white
+    
+}
+
+.inner-accordion{
+    display: none;
+    background-color: white;
+    padding:10px;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+h1 {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(255, 94, 0)
+}
+
